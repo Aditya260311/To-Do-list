@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #tasks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #tasks-list li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #tasks-list li:hover {
+    background-color: #ddd;
+  }
+  
+  #tasks-list li.completed {
+    background-color: #ddd;
+    text-decoration: line-through;
+  }
+  
+  #tasks-list li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #tasks-list li label {
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  #add-task-form {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  #new-task {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+  }
+  
+  #add-task-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    border: none;
+    background-color: transparent;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .delete-btn:hover {
+    color: #e60000;
+  }
+  
